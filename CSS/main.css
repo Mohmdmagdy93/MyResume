@@ -1,0 +1,191 @@
+:root{
+    --main-color: #32373d;
+    --font-color: #b0b5bb;
+    --font-color2: #202327;
+    --main-padding: 50px;
+    --section-padding: 30px;
+    --main-margin: 50px;
+    --half-margin: 30px;
+}
+
+
+
+/* ============= general rules ============= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    margin-top: var(--main-margin);
+}
+
+.section-heading{
+    color: var(--main-color);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    left: -17px;
+}
+
+.section-heading .section-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 6px;
+    position: relative;
+    transform: rotate(45deg);
+}
+.section-heading .section-icon i{
+    color: white;
+    font-size: 25px;
+    transform: rotate(-45deg);
+}
+.section-heading h2{
+    padding-top: 6px;
+}
+
+ul{
+    list-style: none;
+}
+
+.section-content{
+    padding-left: 37px;
+    padding-top: var(--section-padding);
+}
+
+.section-content>*{
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.section-content>*::before{
+    content: '';
+    background-color: var(--main-color);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -42px;
+    top: 5px;
+    transform: rotate(45deg);
+}
+
+.gauge{
+    position: relative;
+}
+.progress-bar{
+    background-color: var(--font-color);
+    height: 10px;
+    width: 200px;
+    position: absolute;
+    left: calc(100% - 200px);
+    top: 4px;
+}
+
+.progress-bar span{
+    background-color: var(--main-color);
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+} 
+
+.large-content>li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.large-content>li .date{
+    flex: 1;
+    flex-basis: 20%;
+}
+
+.large-content>li>div:nth-child(2){
+    /* flex-basis: 85%; */
+}
+
+
+
+
+
+/* ============= general rules End ============= */
+
+
+/* ======== header ========= */
+
+header{
+    background-color: var(--main-color);
+    height: 300px;
+    width: 100%;
+    padding: var(--main-padding); 
+    color: var(--font-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    text-transform: uppercase;
+}
+
+header p{
+    padding-bottom: 10px;
+}
+
+header .label{
+    font-weight: 800;
+}
+header .img{
+    background-color: white;
+    border-radius: 20%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+header .img img{
+    width: 200px;
+}
+
+
+/* ======== header end ========= */
+
+
+
+/* =========== Main =============== */
+
+main{
+    margin-top: var(--half-margin);
+    padding: 0 50px;
+    position: relative;
+    color: var(--main-color);
+}
+
+main .main-line{
+    width: 1px;
+    height: 100%;
+    background-color: var(--font-color);
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+main>p{
+    padding: 0;
+}
+
+/* ============ Main End ============ */
+
+
+/* ============ Skills Section ============= */
+
