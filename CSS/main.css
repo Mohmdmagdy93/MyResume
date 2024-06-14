@@ -1,11 +1,10 @@
 :root{
     --main-color: #32373d;
-    --font-color: #b0b5bb;
-    --font-color2: #202327;
+    --page-color: #dadada;
+    --secondary-color: #b0b5bb;
+    --font-color: #202327;
     --main-padding: 50px;
-    --section-padding: 30px;
-    --main-margin: 50px;
-    --half-margin: 30px;
+    --half-padding: 30px;
 }
 
 
@@ -22,19 +21,37 @@ html{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    line-height: 1.3;
+}
+
+body{
+    width: 920px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+li{
+    padding-bottom: 5px;
+}
+
+a{
+    color: #345da8;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 section{
-    margin-top: var(--main-margin);
+    margin-top: var(--main-padding);
 }
 
 .section-heading{
     color: var(--main-color);
     display: flex;
-    gap: 30px;
+    gap: 25px;
     align-items: center;
     position: relative;
-    left: -17px;
+    left: -18px;
 }
 
 .section-heading .section-icon{
@@ -44,10 +61,12 @@ section{
     background-color: var(--main-color);
     padding: 6px;
     position: relative;
+    width: 37px;
+    height: 37px;
     transform: rotate(45deg);
 }
 .section-heading .section-icon i{
-    color: white;
+    color: var(--page-color);
     font-size: 25px;
     transform: rotate(-45deg);
 }
@@ -56,12 +75,12 @@ section{
 }
 
 ul{
-    list-style: none;
+    list-style: none;   
 }
 
 .section-content{
-    padding-left: 37px;
-    padding-top: var(--section-padding);
+    padding-left: 44px;
+    padding-top: var(--half-padding);
 }
 
 .section-content>*{
@@ -75,7 +94,7 @@ ul{
     width: 10px;
     height: 10px;
     position: absolute;
-    left: -42px;
+    left: -48.5px;
     top: 5px;
     transform: rotate(45deg);
 }
@@ -84,12 +103,13 @@ ul{
     position: relative;
 }
 .progress-bar{
-    background-color: var(--font-color);
+    background-color: var(--secondary-color);
     height: 10px;
     width: 200px;
     position: absolute;
     left: calc(100% - 200px);
     top: 4px;
+    border-radius: 20px;
 }
 
 .progress-bar span{
@@ -98,27 +118,45 @@ ul{
     width: 50%;
     position: absolute;
     left: 0px;
+    border-radius: 20px;
 } 
 
 .large-content>li{
     display: flex;
-    justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .large-content>li .date{
-    flex: 1;
     flex-basis: 20%;
 }
 
 .large-content>li>div:nth-child(2){
-    /* flex-basis: 85%; */
+    flex-basis: 80%;
 }
 
+.large-content>li>div:nth-child(2) .heading{
+    padding-bottom: 10px;
+}
 
+.large-content>li>div:nth-child(2) .description{
+    padding-bottom: 5px;
+}
 
+.large-content>li>div:nth-child(2) ul li{
+    position: relative;
+    margin-left:20px;
+}
 
-
-/* ============= general rules End ============= */
+.large-content>li>div:nth-child(2) ul li::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
 
 
 /* ======== header ========= */
@@ -128,7 +166,7 @@ header{
     height: 300px;
     width: 100%;
     padding: var(--main-padding); 
-    color: var(--font-color);
+    color: var(--page-color);
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -146,8 +184,8 @@ header .label{
     font-weight: 800;
 }
 header .img{
-    background-color: white;
-    border-radius: 20%;
+    background-color: var(--page-color);
+    border-radius: 50%;
     width: 200px;
     height: 200px;
     overflow: hidden;
@@ -165,8 +203,9 @@ header .img img{
 /* =========== Main =============== */
 
 main{
-    margin-top: var(--half-margin);
-    padding: 0 50px;
+    background-color: var(--page-color);
+    height: fit-content;
+    padding: var(--half-padding) var(--main-padding);
     position: relative;
     color: var(--main-color);
 }
@@ -174,18 +213,32 @@ main{
 main .main-line{
     width: 1px;
     height: 100%;
-    background-color: var(--font-color);
+    background-color: var(--secondary-color);
     position: absolute;
     left: 50px;
-    top: 100px;
+    top: 0;
 }
 
 main>p{
-    padding: 0;
+    padding: 20px;
+    background-color: var(--page-color);
+    position: relative;
+    left: -20px;
+    margin: -20px 0;
+    z-index: 2;
 }
 
-/* ============ Main End ============ */
+/* ============= Languages Section =============== */
 
+#languages .section-content .gauge .progress-bar::after{
+    content: "Advanced (c1)";
+    width: 100%;
+    color: black;  
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    top: 20px;
 
-/* ============ Skills Section ============= */
+}
+
 
