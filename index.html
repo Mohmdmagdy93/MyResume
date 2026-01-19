@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/main.css">
 
     <!-- google font (worksans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,351 +18,235 @@
 
 <body>
 
-    <header>
-        <div class="contact-details">
-            <h1 class="name">mohamed magdy</h1>
-            <div>
-                <p><span class="label">Address</span> 6th of October City, Egypt</p>
-                <p><span class="label">Phone</span> +201030338535</p>
-                <p><span class="label">E-mail</span> mohmd.magdy93@gmail.com</p>
+    <div class="resume-container">
+        <!-- New Header spanning full width -->
+        <header class="main-header">
+            <div class="header-content">
+                <h1 class="name">MOHAMED MAGDY</h1>
+                <h2 class="role">Technical Support Specialist</h2>
+                <ul class="header-contact">
+                    <li><i class="fa-solid fa-phone"></i> +201030338535</li>
+                    <li><i class="fa-solid fa-envelope"></i> mohmd.magdy93@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 6th of October City, Egypt</li>
+                </ul>
             </div>
+            <div class="header-initials">
+                <div class="initials-circle">MM</div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <!-- Sidebar Section (Right in code logic if float, but Flexbox handles visual order) -->
+            <!-- Actually, reference has skills/sidebar on right? No, standard is usually left, but let's check screenshot.
+                 Screenshot 1 description said: "left column (approx. 65%) is wider than the right column (approx. 35%)".
+                 Wait, if left is wider, then left is "Main" and right is "Sidebar".
+                 Let's stick to the visual description: "Left column ... wider". So "Main" is left. "Sidebar" is right.
+            -->
+
+            <main class="main-column">
+                <section id="summary">
+                    <h3>SUMMARY</h3>
+                    <p>I am a technically driven professional with expertise in PC hardware and software support. My
+                        experience includes diagnosing and resolving complex issues while supporting field technicians.
+                        I am passionate about technology, consistently expanding my knowledge, currently delving into
+                        programming with JavaScript and node.js. I thrive on challenges that enhance team value.</p>
+                </section>
+
+                <section id="experience">
+                    <h3>EXPERIENCE</h3>
+
+                    <div class="job-item">
+                        <div class="job-header">
+                            <h4>SSR Technical Support</h4>
+                        </div>
+                        <div class="job-sub">
+                            <span class="company">IBM</span>
+                            <span class="date"><i class="fa-solid fa-calendar-days"></i> 05/2025 - Present</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Egypt</span>
+                        </div>
+                        <p class="job-description">A multinational technology company.</p>
+                        <ul class="job-responsibilities">
+                            <li>Provide advanced hardware technical support for Lenovo Commercial products</li>
+                            <li>Assist in diagnosing and resolving complex hardware issues</li>
+                            <li>Guide installations and offer configuration expertise</li>
+                            <li>Contribute to internal process improvement by auditing support cases</li>
+                            <li>Develop internal tools that enhance workflow efficiency</li>
+                            <li>Promoted in recognition of my technical expertise</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-item">
+                        <div class="job-header">
+                            <h4>Technical Support Specialist</h4>
+                        </div>
+                        <div class="job-sub">
+                            <span class="company">IBM</span>
+                            <span class="date"><i class="fa-solid fa-calendar-days"></i> 08/2024 - 04/2025</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Egypt</span>
+                        </div>
+                        <p class="job-description">A multinational technology company.</p>
+                        <ul class="job-responsibilities">
+                            <li>Deliver hardware technical support to Lenovo Commercial products users</li>
+                            <li>Provide troubleshooting and analysis for hardware installation</li>
+                            <li>Ensure optimal product performance by guiding users</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-item">
+                        <div class="job-header">
+                            <h4>Customer Service Representative</h4>
+                        </div>
+                        <div class="job-sub">
+                            <span class="company">Concentrix</span>
+                            <span class="date"><i class="fa-solid fa-calendar-days"></i> 01/2023 - 07/2024</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Egypt</span>
+                        </div>
+                        <p class="job-description">A global leader in customer experience solutions.</p>
+                        <ul class="job-responsibilities">
+                            <li>Delivered end-to-end customer support for Comcast’s Xfinity Mobile services</li>
+                            <li>Specialized in billing assistance and mobile product support</li>
+                            <li>Worked as part of a support team to ensure high customer satisfaction</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-item">
+                        <div class="job-header">
+                            <h4>Accountant</h4>
+                        </div>
+                        <div class="job-sub">
+                            <span class="company">My Safety</span>
+                            <span class="date"><i class="fa-solid fa-calendar-days"></i> 03/2019 - 11/2019</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Oman</span>
+                        </div>
+                        <p class="job-description">A company focusing on safety solutions.</p>
+                        <ul class="job-responsibilities">
+                            <li>Performed a broad range of accounting and financial tasks</li>
+                            <li>Focused on asset management and cash flow optimization</li>
+                            <li>Ensured the integrity of financial transactions</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-item">
+                        <div class="job-header">
+                            <h4>Digital Illustrator</h4>
+                        </div>
+                        <div class="job-sub">
+                            <span class="company">Freelance</span>
+                            <span class="date"><i class="fa-solid fa-calendar-days"></i> 02/2017 - 01/2019</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Egypt</span>
+                        </div>
+                        <p class="job-description">Freelance design services.</p>
+                        <ul class="job-responsibilities">
+                            <li>Worked as a freelance graphic designer and digital illustrator</li>
+                            <li>Delivered high-quality artwork within tight deadlines</li>
+                            <li>Ensured successful project outcomes and client satisfaction</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-item">
+                        <div class="job-header">
+                            <h4>Accountant, Data Entry Operator</h4>
+                        </div>
+                        <div class="job-sub">
+                            <span class="company">Hegazy Company</span>
+                            <span class="date"><i class="fa-solid fa-calendar-days"></i> 01/2015 - 07/2015</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Egypt</span>
+                        </div>
+                        <p class="job-description">A company specializing in various products and services.</p>
+                        <ul class="job-responsibilities">
+                            <li>Responsible for developing and implementing data entry operations</li>
+                            <li>Created spreadsheets for efficient recordkeeping</li>
+                            <li>Improved data accuracy and speed</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar-column">
+                <section id="skills">
+                    <h3>SKILLS</h3>
+                    <ul class="skills-grid">
+                        <li>Web Development</li>
+                        <li>PC Hardware</li>
+                        <li>Spreadsheets (Excel, Google Sheets)</li>
+                        <li>Call Management</li>
+                        <li>Data Entry</li>
+                        <li>Text Editors (Word, Docs, VS Code)</li>
+                        <li>Data Analysis Fundamentals</li>
+                    </ul>
+                </section>
+
+                <section id="education">
+                    <h3>EDUCATION</h3>
+
+                    <div class="edu-item">
+                        <h4>Bachelors of Business Administration</h4>
+                        <span class="company">Mansoura University</span>
+                        <div class="date-loc">
+                            <span class="date"><i class="fa-solid fa-calendar-days"></i> 2016</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Egypt</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="certifications">
+                    <h3>CERTIFICATIONS</h3>
+                    <div class="edu-item">
+                        <h4>Web Development</h4>
+                        <span class="company">Udacity (2021)</span>
+                        <p class="job-description">ID: JER4AV5U</p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Data Analysis</h4>
+                        <span class="company">Udacity (2021)</span>
+                        <p class="job-description">ID: GH4RM4JP</p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>C Programming</h4>
+                        <span class="company">Dartmouth, IMT (2020)</span>
+                        <p class="job-description">ID: 8ef5b381ecf142dcac4f35736eb31915</p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Processing Programming</h4>
+                        <span class="company">NSESA Foundation (2019)</span>
+                    </div>
+                </section>
+
+                <section id="languages">
+                    <h3>LANGUAGES</h3>
+                    <ul class="languages-list">
+                        <li>
+                            <span class="lang-name">Arabic</span>
+                            <span class="lang-level">Native</span>
+                            <div class="dots" aria-label="5 out of 5">
+                                <span class="dot filled"></span><span class="dot filled"></span><span
+                                    class="dot filled"></span><span class="dot filled"></span><span
+                                    class="dot filled"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lang-name">English</span>
+                            <span class="lang-level">Proficient (C1)</span>
+                            <div class="dots" aria-label="4 out of 5">
+                                <span class="dot filled"></span><span class="dot filled"></span><span
+                                    class="dot filled"></span><span class="dot filled"></span><span
+                                    class="dot empty"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lang-name">German</span>
+                            <span class="lang-level">Intermediate (A2)</span>
+                            <div class="dots" aria-label="2 out of 5">
+                                <span class="dot filled"></span><span class="dot filled"></span><span
+                                    class="dot empty"></span><span class="dot empty"></span><span
+                                    class="dot empty"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
         </div>
-
-        <div class="img">
-            <img src="./imgs/Muhammed-picture-isolated.png" alt="personal picture">
-        </div>
-    </header>
-
-    <main>
-        <p>I’m a technically driven professional with strong expertise in PC hardware and software support, including diagnosing, troubleshooting, and resolving complex technical issues. My experience supporting field technicians and contributing to internal tool development has strengthened my problem-solving skills and deepened my understanding of system-level operations. Passionate about technology in all its forms, I’m constantly expanding my knowledge, currently exploring programming with JavaScript and node.js - and always eager to take on new technical challenges that push my abilities and add value to the team. </p>
-        <div class="main-line"></div>
-        <!-- ================ Skills Section ================= -->
-        <section id="skills">
-            <div class="section-heading">
-                <div class="section-icon">
-                    <i class="fa-solid fa-puzzle-piece"></i>
-                </div>
-                <h2>Skills</h2>
-            </div>
-
-            <ul class="section-content">
-                <li class="gauge" data-percentage="90">Web Development</li>
-                <li class="gauge" data-percentage="97">PC Hardware</li>
-                <li class="gauge" data-percentage="74">spreadsheets (MS Excel, Google sheets)</li>
-                <li class="gauge" data-percentage="92">call management</li>
-                <li class="gauge" data-percentage="97">data entry</li>
-                <li class="gauge" data-percentage="94">Text Editors (MS word, Google docs, VS code)</li>
-                <li>Data Analysis Fundamentals</li>
-            </ul>
-        </section>
-        <!-- ================ Work history Section ================= -->
-        <section id="work-history">
-            <div class="section-heading">
-                <div class="section-icon">
-                    <i class="fa-solid fa-briefcase"></i>
-                </div>
-
-                <h2>Work History</h2>
-            </div>
-
-            <ul class="section-content large-content">
-                <li>
-                    <div class="date">
-                        <p>May 2025 -</p> <!-- start date -->
-                        <p>Present</p> <!-- end date -->
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3> SSR Technical Support </h3> <!-- role name  -->
-                            <p>IBM, Egypt</p> <!--company, location-->
-                        </div>
-                        <p class="description">Provide advanced hardware technical support for Lenovo Commercial products, working directly with Lenovo System Service Representatives (SSRs) - the company’s field technicians - to ensure successful onsite service delivery. In this role, I assist in diagnosing and resolving complex hardware issues, guide installations, and offer configuration expertise to uphold Lenovo's high standards of service. In addition to core responsibilities, I contribute to internal process improvement by auditing support cases and developing internal tools that enhance workflow efficiency. I was promoted to this position in recognition of my technical expertise and consistent performance.</p>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="date">
-                        <p>Aug 2024 -</p> <!-- start date -->
-                        <p>April 2025</p> <!-- end date -->
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3> Technical Support Specialist </h3> <!-- role name  -->
-                            <p>IBM, Egypt</p> <!--company, location-->
-                        </div>
-                        <p class="description">Deliver hardware technical support to Lenovo Commercial products users, offering expert troubleshooting and analysis for hardware installation or reinstallation, system usage, configuration inquiries, and software setup. Ensure optimal product performance by guiding users through technical issues and best practices for Lenovo PC systems.</p>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="date">
-                        <p>Jan 2023 -</p> <!-- start date -->
-                        <p>Jul 2024</p> <!-- end date -->
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3> Customer Service Representative </h3> <!-- role name  -->
-                            <p>Concentrix, Egypt</p> <!--company, location-->
-                        </div>
-                        <p class="description">Delivered end-to-end customer support for Comcast’s Xfinity Mobile services, specializing in
-                            billing assistance, mobile product support, and plan optimization. Worked as part of the
-                            Concentrix support team to ensure high customer satisfaction by resolving issues, guiding
-                            purchases, and simplifying service interactions.</p>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="date">
-                        <p>Mar 2019 -</p> <!-- start date -->
-                        <p>Nov 2019</p> <!-- end date -->
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3> Accountant </h3> <!-- role name  -->
-                            <p>MySafety, Oman</p> <!--company, location-->
-                        </div>
-                        <p class="description">Performed a broad range of accounting and financial tasks, with a strong focus on asset
-                            management, cash flow optimization, and accurate financial reporting. Ensured the integrity
-                            of financial transactions and supported business operations through effective communication
-                            and audit practices.</p>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="date">
-                        <p>Feb 2017 -</p> <!-- start date -->
-                        <p>Jan 2019</p> <!-- end date -->
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3> Digital Illustrator </h3> <!-- role name  -->
-                            <p>Freelance, Egypt</p> <!--company, location-->
-                        </div>
-                        <p class="description">I worked as a freelance graphic designer and digital illustrator, using my ability to sketch characters and scenes and transform them into professional digital illustrations with software like Adobe Illustrator and Photoshop. I consistently delivered high-quality artwork within tight deadlines, ensuring successful project outcomes and client satisfaction.</p>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="date">
-                        <p>Jan 2015 -</p> <!-- start date -->
-                        <p>Jul 2015</p> <!-- end date -->
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3> Accountant, Data Entry Operator </h3> <!-- role name  -->
-                            <p>Hegazy Company, Egypt</p> <!--company, location-->
-                        </div>
-                        <p class="description">During my academic studies, I participated in a practical training where I was responsible for developing and implementing data entry operations, creating spreadsheets for efficient recordkeeping, and improving data accuracy and speed. I ensured the accuracy of records by carefully verifying and inputting information from various sources, consistently completing tasks with both precision and efficiency.</p>
-
-                    </div>
-                </li>
-
-
-            </ul>
-
-        </section>
-
-        <!-- ================ Education Section ================= -->
-        <section id="Education">
-            <div class="section-heading">
-                <div class="section-icon">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-
-                <h2>Education</h2>
-            </div>
-
-            <ul class="section-content large-content">
-
-                <li>
-                    <div class="date">
-                        <p>2020 -</p>
-                        <p>Present</p>
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3>Full Stack Development</h3> <!--Field of Study-->
-                            <p>Udacity + CodeCademy + Online Resources</p> <!--School Name - Location-->
-                        </div>
-                        <p class="description">Self-studying web development through online resources, gaining
-                            proficiency in HTML, CSS, and JavaScript. Passionate about creating responsive and
-                            user-friendly websites.</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="date">
-                        <p>2018</p>
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3>C PROGRAMMING LANGUAGE</h3> <!--Field of Study-->
-                            <p>Dartmouth & IMT (Online)</p> <!--School Name - Location-->
-                        </div>
-                        <p class="description">An online course presented by Dartmouth college and IMT through EDX
-                            online platform, the course aims to help its students to learn the fundmentals and advanced
-                            concepts of computer programming using C programming language</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="date">
-                        <p>2016</p>
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3>Accountants preperation Course</h3> <!--Field of Study-->
-                            <p>Mansoura University - Egypt</p> <!--School Name - Location-->
-                        </div>
-                        <p class="description">A course to prepare students to practice real life accounting after
-                            graduation.</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="date">
-                        <p>2011 -</p> <!--Start Date-->
-                        <p>2016</p> <!--End Date-->
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3>Bachelors of Business adminstration</h3> <!--Field of Study-->
-                            <p>Mansoura University - Egypt</p> <!--School Name - Location-->
-                        </div>
-                        <p class="description"></p>
-                    </div>
-                </li>
-
-            </ul>
-
-        </section>
-
-
-        <!-- ============ Languages Section ============ -->
-
-        <section id="Languages">
-            <div class="section-heading">
-                <div class="section-icon">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
-
-                <h2>Languages</h2>
-            </div>
-
-            <ul class="section-content">
-                <li>Arabic - Native Language</li>
-                <li class="gauge" data-percentage="83.33"> English - Advanced (C1) </li>
-                <li class="gauge" data-percentage="33.33"> German - Elementary (A2)</li>
-            </ul>
-        </section>
-
-        <!-- =============== Certification Section  ==================-->
-
-        <section id="certification">
-
-            <div class="section-heading">
-                <div class="section-icon">
-                    <i class="fa-solid fa-circle-check"></i>
-                </div>
-
-                <h2>Certification</h2>
-            </div>
-
-            <ul class="section-content large-content">
-
-                <li>
-                    <div class="date">
-                        <p>Jun 2021</p>
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3>Web Development</h3>
-                            <p>Udacity</p>
-                        </div>
-                        <p><strong>Link =></strong> <a
-                                href="https://drive.google.com/file/d/1Q-5dsa0AhVToD_Hnxpx6iZfcQYK1dtQz/view?usp=sharing"
-                                target="_blank">
-                                Click Here </a>, <strong>Certificate ID:</strong> JER4AV5U</p>
-
-                    </div>
-                </li>
-                <li>
-                    <div class="date">
-                        <p>Jun 2021</p>
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3>Data Analysis</h3>
-                            <p>Udacity</p>
-                        </div>
-                        <p><strong>Link =></strong> <a
-                                href="https://drive.google.com/file/d/148BvU6IDIuX2mr3KSUXFnEmnWejzcKpV/view?usp=sharing"
-                                target="_blank">
-                                Click Here </a>, <strong>Certificate ID:</strong> GH4RM4JP</p>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="date">
-                        <p>Feb 2020</p>
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3>C programming Language</h3>
-                            <p>Dartmouth, IMT</p>
-                        </div>
-                        <p><strong>Certificate 1 Link =></strong> <a
-                                href="https://courses.edx.org/certificates/8ef5b381ecf142dcac4f35736eb31915"
-                                target="_blank"> Click Here
-                            </a>, <strong>Certificate ID:</strong> 8ef5b381ecf142dcac4f35736eb31915</p>
-                        <p><strong>Certificate 2 Link =></strong> <a
-                                href="https://courses.edx.org/certificates/f1ba3496f72349e4b337cf05a5de655d"
-                                target="_blank"> Click Here </a>, <strong>Certificate
-                                ID:</strong> f1ba3496f72349e4b337cf05a5de655d</p>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="date">
-                        <p>Jun 2019</p>
-                    </div>
-
-                    <div>
-                        <div class="heading">
-                            <h3>Processing Programming Language</h3>
-                            <p>NSESA Foundation</p>
-                        </div>
-                        <p><strong>Link =></strong> <a
-                                href="https://drive.google.com/file/d/13tJxXdM_lWyl7liu0h-HiKDEl-eFBSJ8/view?usp=sharing"
-                                target="_blank">
-                                Click Here </a> </p>
-                    </div>
-                </li>
-
-            </ul>
-
-        </section>
-    </main>
-
-    <script src="./scripts/progress-bar.js"></script>
+    </div>
 
 </body>
 
